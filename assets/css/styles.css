@@ -104,3 +104,41 @@
   <p>📞 07590 212718 | ✉️ <a href="mailto:liam@elevate-ec.co.uk" style="color: #ffffff;">liam@elevate-ec.co.uk</a></p>
 </footer>
 </body></html>
+/* About Us page styling */
+.about {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.about h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.team {
+  margin-top: 2rem;
+}
+
+.team-member {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 4px solid #0077cc;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.team-member h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.team-member p {
+  margin: 0.2rem 0;
+}
+
