@@ -2,53 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Independent Technical Advisory Services</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
     body {
       font-family: 'Nunito', sans-serif;
+    }
+  </style>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to top, #f0f0f0, white);
+      background: radial-gradient(circle, #f7f7f7 0%, #e0e0e0 100%);
+      color: #333;
     }
     header {
-      background-color: #0a2342;
+      background: #0b1f3a;
       color: white;
-      padding: 20px;
-      text-align: center;
+      padding: 1rem 2rem;
     }
-    main {
-      padding: 40px;
-      max-width: 800px;
+    header img {
+      max-height: 60px;
+      vertical-align: middle;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
       margin: auto;
-    }
-    h1 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 1.6;
+      text-align: left;
     }
     footer {
-      background-color: #0a2342;
+      background: #1a1a1a;
       color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
+      text-align: left;
+      padding: 1.5rem 2rem;
+      margin-top: 3rem;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+    ul ul {
+      list-style: circle;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background: #007bff;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #0056b3;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Independent Technical Advisory Services</h1>
+    <a href="index.html"><img src="https://www.elevate-ec.co.uk/images/banner.jpg" alt="Elevate Engineering Compliance Banner" style="max-height: 70px;" /></a>
+    <nav>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+</div>
+  <main><main style="margin-top: 40px;">
+
+    <h1 style="margin-left: 30px; font-size: 1.5em;<h1>Independent Technical Advisory Services</h1>
   </header>
   <main>
+      <div style="margin-left: 30px; max-width: 800px;">
     <p>As a trusted engineering partner, we offer specialist, third-party technical advice across a broad range of building services systems. From electrical safety (SAP HV/LV), energy audits, and commissioning oversight, to design validation and compliance guidance, we ensure every solution is robust, safe, and fully aligned with best practice and regulation.</p>
   </main>
-  <footer>
-    &copy; Elevate Engineering Compliance Ltd
+   <footer>
+     <p>© Elevate Engineering Compliance Ltd | Company No. 15707730</p>
+    <p>📞 07590 212718 | ✉️ <a href="mailto:info@elevate-ec.co.uk" style="color: #ffffff;">info@elevate-ec.co.uk</a></p>
+    <img src="images/footer.png" alt="Footer Banner" style="width: 70%; height: auto;" />
   </footer>
 </body>
 </html>
