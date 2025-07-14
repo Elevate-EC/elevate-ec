@@ -1,77 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Nunito'Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: radial-gradient(circle, #f7f7f7 0%, #e0e0e0 100%);
-      color: #333;
-    }
-    header {
-      background: #0b1f3a;
-      color: white;
-      padding: 1rem 2rem;
-    }
-    header img {
-      max-height: 60px;
-      vertical-align: middle;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      color: white;
-      margin-right: 20px;
-      text-decoration: none;
-    }
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-      text-align: left;
-    }
-    footer {
-      background: #1a1a1a;
-      color: white;
-      text-align: left;
-      padding: 1.5rem 2rem;
-      margin-top: 3rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <a href="index.html"><img src="images/banner.jpg" alt="Elevate Engineering Compliance Banner" style="max-height: 70px;"></a>
-    <nav>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
-
-  <section>
-    <main><main style="margin-top: 40px;">
-
-    <h1 style="margin-left: 30px; font-size: 1.5em;
-    <h2>Specialist Technical Advisory</h2>
-    <p>Our advisory services offer independent expertise across electrical systems, SAP HV/LV assessments and comprehensive energy audits. We focus on practical recommendations, safety and clear investment analysis so you can make decisions with confidence.</p>
-    <ul>
-      <li>Electrical systems and safety reviews</li>
-      <li>SAP high/low voltage assessments</li>
-      <li>Day and after-hours energy audits with payback analysis</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; Elevate Engineering Compliance Ltd | Company No. 15707730</p>
-    <p>📞 07590 212718 | ✉️ <a href="mailto:info@elevate-ec.co.uk" style="color: #ffffff;">info@elevate-ec.co.uk</a></p>
-    <img src="images/footer.png" alt="Footer Banner" style="width: 70%; height: auto;" />
-  </footer>
-</body>
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a//dev/null b/advisory.html
+index 0000000000000000000000000000000000000000..d04438effdede5e40baa6fb72f9ff32c532f986c 100644
+--- a//dev/null
++++ b/advisory.html
+@@ -0,0 +1,75 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <link rel="preconnect" href="https://fonts.googleapis.com">
++  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
++  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
++  <style>
++    body {
++      font-family: 'Nunito', Arial, sans-serif;
++      margin: 0;
++      padding: 0;
++      background: radial-gradient(circle, #f7f7f7 0%, #e0e0e0 100%);
++      color: #333;
++    }
++    header {
++      background: #0b1f3a;
++      color: white;
++      padding: 1rem 2rem;
++    }
++    header img {
++      max-height: 60px;
++      vertical-align: middle;
++    }
++    nav {
++      margin-top: 1rem;
++    }
++    nav a {
++      color: white;
++      margin-right: 20px;
++      text-decoration: none;
++    }
++    section {
++      padding: 2rem;
++      max-width: 1000px;
++      margin: auto;
++      text-align: left;
++    }
++    footer {
++      background: #1a1a1a;
++      color: white;
++      text-align: left;
++      padding: 1.5rem 2rem;
++      margin-top: 3rem;
++    }
++  </style>
++</head>
++<body>
++  <header>
++    <a href="index.html"><img src="images/banner.jpg" alt="Elevate Engineering Compliance Banner" style="max-height: 70px;"></a>
++    <nav>
++      <a href="about.html">About Us</a>
++      <a href="services.html">Services</a>
++      <a href="contact.html">Contact Us</a>
++    </nav>
++  </header>
++
++  <section>
++    <h2>Specialist Technical Advisory</h2>
++    <p>Our advisory services offer independent expertise across electrical systems, SAP HV/LV assessments and comprehensive energy audits. We focus on practical recommendations, safety and clear investment analysis so you can make decisions with confidence.</p>
++    <ul>
++      <li>Electrical systems and safety reviews</li>
++      <li>SAP high/low voltage assessments</li>
++      <li>Day and after-hours energy audits with payback analysis</li>
++    </ul>
++  </section>
++
++  <footer>
++    <p>&copy; Elevate Engineering Compliance Ltd | Company No. 15707730</p>
++    <p>📞 07590 212718 | ✉️ <a href="mailto:info@elevate-ec.co.uk" style="color: #ffffff;">info@elevate-ec.co.uk</a></p>
++    <img src="images/footer.png" alt="Footer Banner" style="width: 70%; height: auto;" />
++  </footer>
++</body>
++</html>
+ 
+EOF
+)
