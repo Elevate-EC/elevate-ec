@@ -82,11 +82,33 @@
 <body>
   <header>
      <a href="index.html"><img src="images/banner.jpg" alt="Elevate Engineering Compliance Banner" style="max-height: 70px;"></a>
-    <nav>
-       <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
+   <nav style="display: flex; align-items: center; gap: 20px;">
+  <a href="about.html">About Us</a>
+
+  <div class="dropdown" style="position: relative;">
+    <a href="#" style="color: white; text-decoration: none;">Services ▼</a>
+    <ul class="dropdown-content" style="display: none; position: absolute; background-color: #0b1f3a; list-style: none; padding: 0; margin: 0; top: 100%; left: 0; z-index: 1000;">
+      <li><a href="decarbonisation.html" style="color: white; display: block; padding: 10px;">Decarbonisation Strategies</a></li>
+      <li><a href="quality.html" style="color: white; display: block; padding: 10px;">Project Quality Assurance</a></li>
+      <li><a href="advisory.html" style="color: white; display: block; padding: 10px;">Independent Technical Advisory Services</a></li>
+      <li><a href="asset.html" style="color: white; display: block; padding: 10px;">Strategic Asset Management</a></li>
+    </ul>
+  </div>
+
+  <a href="contact.html">Contact Us</a>
+</nav>
+
+<script>
+  // Show/hide dropdown on hover
+  const dropdown = document.querySelector('.dropdown');
+  dropdown.addEventListener('mouseenter', () => {
+    dropdown.querySelector('.dropdown-content').style.display = 'block';
+  });
+  dropdown.addEventListener('mouseleave', () => {
+    dropdown.querySelector('.dropdown-content').style.display = 'none';
+  });
+</script>
+
   </header>
   <section>
     <div style="display: flex; align-items: flex-start; gap: 30px; margin-top: 40px;">
