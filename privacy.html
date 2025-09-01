@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+    }
+  </style>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle, #f7f7f7 0%, #e0e0e0 100%);
+      color: #333;
+    }
+    header {
+      background: #0b1f3a;
+      color: white;
+      padding: 1rem 2rem;
+    }
+    header img {
+      max-height: 60px;
+      vertical-align: middle;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      text-align: left;
+    }
+    footer {
+      background: #1a1a1a;
+      color: white;
+      text-align: left;
+      padding: 1.5rem 2rem;
+      margin-top: 3rem;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+    ul ul {
+      list-style: circle;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="images/banner.jpg"
+           alt="Elevate Engineering Compliance Banner"
+           style="max-height: 70px;">
+    </a>
+    <nav style="display: flex; align-items: center; gap: 20px;">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+
+      <div class="dropdown" style="position: relative;">
+        <a href="#" style="color: white; text-decoration: none;">Services ▼</a>
+        <ul class="dropdown-content"
+            style="display: none; position: absolute; background-color: #0b1f3a; list-style: none; padding: 0; margin: 0; top: 100%; left: 0; z-index: 1000; min-width: 280px;">
+          <li><a href="decarbonisation.html" style="color: white; display: block; padding: 10px;">Decarbonisation Strategies</a></li>
+          <li><a href="quality.html" style="color: white; display: block; padding: 10px;">Project Quality Assurance</a></li>
+          <li><a href="advisory.html" style="color: white; display: block; padding: 10px;">Independent Technical Advisory Services</a></li>
+          <li><a href="asset.html" style="color: white; display: block; padding: 10px;">Strategic Asset Management</a></li>
+        </ul>
+      </div>
+
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <script>
+      // Dropdown hover behaviour
+      const dropdown = document.querySelector('.dropdown');
+      dropdown.addEventListener('mouseenter', () => {
+        dropdown.querySelector('.dropdown-content').style.display = 'block';
+      });
+      dropdown.addEventListener('mouseleave', () => {
+        dropdown.querySelector('.dropdown-content').style.display = 'none';
+      });
+    </script>
+  </header>
+
+  <section>
+    <h2>Privacy Policy</h2>
+    <p><strong>Elevate Engineering Compliance Ltd</strong><br>
+       <em>Effective Date: 01/09/2025</em></p>
+
+    <h3>1. Introduction</h3>
+    <p>Elevate Engineering Compliance Ltd (“we”, “our”, “us”) respects your privacy and is committed to protecting your personal data.
+       This privacy policy explains how we collect, use, and protect personal information when you use our website
+       (<a href="https://www.elevate-ec.co.uk">www.elevate-ec.co.uk</a>), contact us, or engage with our services.<br>
+       We comply with the UK General Data Protection Regulation (UK GDPR), the Data Protection Act 2018, and other relevant legislation.</p>
+
+    <h3>2. Information We Collect</h3>
+    <p>We may collect and process the following types of personal data:</p>
+    <ul>
+      <li><strong>Identity Data:</strong> Name, job title, employer/organisation.</li>
+      <li><strong>Contact Data:</strong> Email address, phone number, business address.</li>
+      <li><strong>Technical Data:</strong> IP address, browser type, and usage data when you browse our website.</li>
+      <li><strong>Business Data:</strong> Information you provide in relation to proposals, projects, or subcontractor applications.</li>
+      <li><strong>Training/Qualifications Data:</strong> Where provided by subcontractors for compliance purposes.</li>
+    </ul>
+    <p>We do not collect sensitive personal information unless it is necessary for compliance (e.g., health and safety training records).</p>
+
+    <h3>3. How We Use Your Information</h3>
+    <p>We will only use your personal data when the law allows us to, including for:</p>
+    <ul>
+      <li>Responding to enquiries.</li>
+      <li>Providing consultancy services.</li>
+      <li>Contract and subcontractor management.</li>
+      <li>Compliance with legal and regulatory obligations.</li>
+      <li>Improving our website and services.</li>
+      <li>Sending updates about our services (with your consent).</li>
+    </ul>
+
+    <h3>4. Legal Basis for Processing</h3>
+    <p>We rely on the following lawful bases for processing:</p>
+    <ul>
+      <li><strong>Contract:</strong> To perform obligations under a contract with you.</li>
+      <li><strong>Legal Obligation:</strong> To comply with statutory requirements (e.g., health and safety record keeping).</li>
+      <li><strong>Legitimate Interests:</strong> To manage and grow our business.</li>
+      <li><strong>Consent:</strong> Where you opt in to receive marketing communications.</li>
+    </ul>
+
+    <h3>5. Sharing of Information</h3>
+    <p>We may share your personal data with:</p>
+    <ul>
+      <li>NHS Trusts or clients where necessary to deliver services.</li>
+      <li>Subcontractors or consultants engaged on projects.</li>
+      <li>Professional advisers (lawyers, accountants, insurers).</li>
+      <li>Regulators and authorities where legally required.</li>
+    </ul>
+    <p>We will never sell your data to third parties.</p>
+
+    <h3>6. Data Retention</h3>
+    <p>We will keep your personal data only for as long as necessary to fulfil the purposes we collected it for, including legal,
+       accounting, or reporting requirements. For example:</p>
+    <ul>
+      <li>Accident reports: 3 years (as per Employers’ Liability Act).</li>
+      <li>Subcontractor training/qualification records: for the duration of the contract plus 6 years.</li>
+    </ul>
+
+    <h3>7. Your Rights</h3>
+    <p>Under UK GDPR you have rights including:</p>
+    <ul>
+      <li>Access to your personal data.</li>
+      <li>Correction of inaccurate or incomplete data.</li>
+      <li>Erasure (“the right to be forgotten”).</li>
+      <li>Restriction or objection to processing.</li>
+      <li>Data portability.</li>
+      <li>Withdrawal of consent (where processing is based on consent).</li>
+    </ul>
+    <p>To exercise your rights, please contact us (details below).</p>
+
+    <h3>8. Security of Data</h3>
+    <p>We have implemented appropriate technical and organisational measures to protect personal data against accidental loss,
+       unauthorised access, alteration, or disclosure.</p>
+
+    <h3>9. Cookies</h3>
+    <p>Our website may use cookies to improve user experience and collect anonymous analytics data. You can control cookies through your browser settings.</p>
+
+    <h3>10. Contact Us</h3>
+    <p>If you have any questions about this policy or wish to exercise your rights, please contact:</p>
+    <p>
+      Elevate Engineering Compliance Ltd<br>
+      7 Overend Close, Bradwell, Milton Keynes, MK13 9EJ<br>
+      Email: <a href="mailto:liam@elevate-ec.co.uk">liam@elevate-ec.co.uk</a><br>
+      Phone: 07590 212718
+    </p>
+    <p>You also have the right to lodge a complaint with the Information Commissioner’s Office (ICO) at <a href="https://www.ico.org.uk">www.ico.org.uk</a>.</p>
+  </section>
+
+  <footer>
+    <p>© Elevate Engineering Compliance Ltd | Company No. 15707730</p>
+    <p>📞 07590 212718 | ✉️ <a href="mailto:info@elevate-ec.co.uk" style="color: #ffffff;">info@elevate-ec.co.uk</a></p>
+    <img src="images/footer.png" alt="Footer Banner" style="width: 70%; height: auto;" />
+  </footer>
+</body>
+</html>
